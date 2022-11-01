@@ -1,0 +1,9 @@
+declare 
+k int;
+j int;
+begin
+k:=&k;
+dbms_output.put_line(k);
+end;
+/
+

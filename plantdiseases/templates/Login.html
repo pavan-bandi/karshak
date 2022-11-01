@@ -1,0 +1,233 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="themes/assets/ico/favicon.ico">
+    <title>Bootstrappage.com free templates</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'assets/css/k.css' %}" rel="stylesheet">
+  </head>
+
+  <style>
+
+    .plant1 {
+      background-image:url('{% static 'assets/images/salate.png'%}');
+
+      background-repeat: no-repeat;
+
+  background-size: cover;
+    }
+    .plant2 {
+      background-color: "red"
+      background-repeat: no-repeat;
+
+  background-size: cover;}
+
+
+ img {
+  max-width: 100%;
+   border-radius: 16px;
+
+}
+img:hover {
+  transform: scaleX(-1);
+}
+
+    .cl{
+      text-align: left;
+    }
+   .ca{
+   position:absolute;
+   top:10px;
+   left:300px;
+   }
+
+.login-dark {
+max-width:320px;
+width:90%;
+background-color: #09ff22;
+padding:40px;
+border-radius:10px;
+transform: translate(-50%,-50%);
+position: absolute;
+top: 60%;
+left: 10%;
+color:#fff;
+box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+
+
+
+}
+
+.login-dark form {
+max-width:320px;
+width:90%;
+background-color:#1e2833;
+padding:40px;
+border-radius:4px;
+transform:translate(-50%, -50%);
+position:absolute;
+top:50%;
+left:50%;
+color:#fff;
+box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+}
+
+.login-dark .illustration {
+text-align:center;
+padding:15px 0 20px;
+font-size:100px;
+color:#2980ef;
+}
+
+.login-dark form .form-control {
+background:none;
+border:none;
+border-bottom:1px solid #434a52;
+border-radius:0;
+box-shadow:none;
+outline:none;
+color:inherit;
+}
+
+.login-dark form .btn-primary {
+background:#214a80;
+border:none;
+border-radius:4px;
+padding:11px;
+box-shadow:none;
+margin-top:26px;
+text-shadow:none;
+outline:none;
+}
+
+.login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
+background:#214a80;
+outline:none;
+}
+
+.login-dark form .forgot {
+display:block;
+text-align:center;
+font-size:12px;
+color:#6f7a85;
+opacity:0.9;
+text-decoration:none;
+}
+
+.login-dark form .forgot:hover, .login-dark form .forgot:active {
+opacity:1;
+text-decoration:none;
+}
+
+.login-dark form .btn-primary:active {
+transform:translateY(1px);
+}
+
+
+</style>
+    </style>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href=''>Home</a></li>
+                <li><a href="/farmer">Farmers corner</a></li>
+
+
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">plant diseases <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Bacterial</a></li>
+                    <li><a href="#">Fungal</a></li>
+                    <li><a href="#">Viral</a></li>
+
+                  </ul>
+                </li>
+
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">pesticides <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Insecticides</a></li>
+                    <li><a href="#">Fungicides</a></li>
+                    <li><a href="#">Herbicides</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">fertilizers <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Organic</a></li>
+                    <li><a href="#">Inorganic</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="login-dark form-inline py-0 mx-4 my-4 pl-4 pr-4" >
+    <form>
+
+    <h1 class="text-center">Signup</h1>
+
+    <div  class="form-group"><input class="form-control mb-2" type="text" name="first_name" placeholder="First Name"></div>
+
+    <div class="form-group"><input class="form-control mb-2" type="text" placeholder="last name"  name="lname"></div>
+    <div class="form-group"><input class="form-control mb-2" type="date"placeholder="date of birth" name="dob"></div>
+    <div class="form-group"><input class="form-control mb-2" type="email" placeholder="email",name="email"></div>
+    <div class="form-group"><input class="form-control mb-2" type="password" placeholder="enter password" name="password"></div>
+    <div class="form-group"><button class="btn btn-primary btn-block mt-2 ml-2" type="submit">Register</button></div>
+    </form>
+
+
+
+</div>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>

@@ -1,0 +1,26 @@
+.alert {
+    padding: 20px;
+
+    position: absolute;
+    top:10%;
+
+    background-color: #fff;
+    color: black;
+    overflow: visible;
+    z-index: 10;
+  }
+  
+  .closebtnn {
+    margin-left: 15px;
+    color: red;
+    font-weight: bold;
+    float: right;
+    font-size: 50px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  
+  .closebtnn:hover {
+    color: black;
+  }

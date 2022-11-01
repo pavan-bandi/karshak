@@ -1,0 +1,244 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="themes/assets/ico/favicon.ico">
+    <title>Bootstrappage.com free templates</title>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <link href="{% static 'assets/css/k.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'assets/css/pl.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/carousel.css' %}" rel="stylesheet">
+  </head>
+
+  <style>
+
+    body {
+      background-image:url('{% static 'assets/images/plants.png'%}');
+      
+      background-repeat: no-repeat;
+ 
+  background-size: cover;
+    }
+
+    .search {
+     
+      background-color:white;
+      padding:20px;
+      border-radius:4px;
+      
+      position:absolute;
+      top:30%;
+      left:70%;
+      color:black;
+      box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+    }
+
+    li {
+      display: block;
+    }
+
+
+    .abc{
+      width:100%;
+      margin-right:160px;
+    }
+
+    
+
+
+ 
+  
+ 
+
+    .p {
+      width: 35px;
+      height: 5px;
+      background-color: black;
+      margin: 6px 0;
+    }
+
+  
+    </style>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+    
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href='/'>Home</a></li>
+                	<li class="dropdown">
+                  <a href="#" class="dropdown-toggle active" data-toggle="dropdown">farmers corner <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/addf">add farmer</a></li>
+                    <li><a href="/addc">add crops</a></li>
+                    <li><a href="/addp">Add pesticides</a></li>
+
+                  </ul>
+                </li>
+                
+                
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">plant diseases <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Bacterial</a></li>
+                    <li><a href="#">Fungal</a></li>
+                    <li><a href="#">Viral</a></li>
+                   
+                  </ul>
+                </li>
+				
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">pesticides <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Insecticides</a></li>
+                    <li><a href="#">Fungicides</a></li>
+                    <li><a href="#">Herbicides</a></li>
+                  </ul>
+                </li>
+				
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">fertilizers <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Organic</a></li>
+                    <li><a href="#">Inorganic</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  <div class="plant1" style="height:200px;">
+      <div class="container">
+      <div class="carousel-caption">
+
+      </div>
+      </div>
+    </div>
+
+  
+
+    
+      
+
+
+
+
+
+
+
+ 
+  <div class='form'  style="position:absolute;top:20%;left:30%; width:600px; background: linear-gradient(white,#e6f2ff);">
+    <form method="get">
+{% csrf_token %}
+<div class="title">Welcome</div>
+<span></span>
+<span></span>
+<div class="subtitle" style="position:absolute;left:20px; top:20px"><img src='{% static 'assets/images/w.png'%}'  style="width:100px;height:100px; "></div>
+<div class="subtitle" style="position:absolute;left:450px; top:20px"><img src='{% static 'assets/images/w.png'%}'  style="width:100px;height:100px; "></div>
+<div class="input-container ic1">
+  <input id="firstname" class="input" type="text"   name="f_id" placeholder=" " />
+ 
+  <label for="firstname" class="placeholder">enter farmer id</label>
+
+
+  <input id="lastname" class="input" type="text" name='crop_id'  placeholder=" " />
+
+  <label for="lasttname" class="placeholder" style="left:200px">enter crop id</label>
+
+
+
+
+    <input class="input submi" style='background-color:#52d9a7;color:white ;' type='submit' >
+      </form>
+    </div>
+
+
+    <hr></hr>
+        {% for farmer in farmers %}
+<div class='abc'><b>Farmer Name</b>  &nbsp  :   {{farmer.Name}} &nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp &nbsp              
+      {% endfor %}
+        {% for crop in crops %}
+<b>Crop Name</b>  &nbsp&nbsp&nbsp &nbsp  :   {{crop.crop_name}}            </div>
+  {% endfor %}
+
+  <br></br>
+  <br></br>
+
+
+    
+    
+          <table id="table" class="table table-striped table-primary">
+                    <tr class="bg-info text-white">
+                        <th style="text-align:center">S_NO</th>
+                        <th style="text-align:center">date</th>
+                        <th style="text-align:center">pesticide name</th>
+                        <th style="text-align:center">pesticide used for</th>
+                        <th style="text-align:center">price</th>
+
+                    </tr>
+
+
+              {% for c in pests %}
+                    <tr>
+                        <td style="text-align:center">{{c.id}}</td>
+                        <td style="text-align:center">{{c.created_at}}</td>
+                        <td style="text-align:center">{{c.fert_or_pest}}</td>
+                        <td style="text-align:center">{{c.fertizer_for}}</td>
+                        <td style="text-align:center">{{c.price}}</td>
+
+                        </td>
+                    </tr>
+            {% endfor%}
+        </table>
+    </div>
+
+
+
+
+
+
+  
+
+
+<!-- /.sidebar-menu -->
+
+
+
+
+ 
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{% static 'dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'dist/js/bootstrap.holder.js' %}"></script>
+  </body>

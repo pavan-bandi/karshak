@@ -1,0 +1,255 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="themes/assets/ico/favicon.ico">
+    <title>Bootstrappage.com free templates</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/k.css' %}" rel="stylesheet">
+
+    <link href="{% static 'assets/css/10.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+  <link href="{% static 'assets/css/carousel.css' %}" rel="stylesheet">
+  </head>
+
+  <style>
+
+    body {
+      background-image:url('{% static 'assets/images/plants.png'%}');
+      
+      background-repeat: no-repeat;
+ 
+  background-size: cover;
+    }
+
+
+
+    
+
+
+ 
+  
+
+  .side{
+    width:150px;
+    text-align:center;
+    background-color:green;
+    color:black;
+  }
+
+  .dropbtn {
+    background-color: #c83a3a;
+    color: black;
+    position: relative;
+    border-color:#c83a3a;
+    padding:21px 70px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdownn {
+    position: absolute;
+    display: inline-block;
+    top:295px;
+  }
+  
+  .dropdown-content {
+  
+    position: absolute;
+    background-color: #efefef;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #c83a3a;
+    color:white;}
+  
+  .dropdownn:hover .dropdown-content {
+    display: block;
+    
+  }
+  
+  .dropdownn:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  .a{
+   
+    style=" box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    width:100%;
+    }
+
+    .p {
+      width: 35px;
+      height: 5px;
+      background-color: black;
+      margin: 6px 0;
+    }
+   .k a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+  
+    </style>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+    
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href='/'>Home</a></li>
+               <li class="dropdown" >
+                  <a  href="#" class="dropdown-toggle k"  data-toggle="dropdown">farmers corner <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="/farmer">Home</a></li>
+                    <li><a class='active' href="#">add farmer</a></li>
+                    <li><a href="/addc">add crops</a></li>
+                    <li><a href="/addp">Add pesticides</a></li>
+
+                  </ul>
+                </li>
+                
+                
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">plant diseases <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Bacterial</a></li>
+                    <li><a href="#">Fungal</a></li>
+                    <li><a href="#">Viral</a></li>
+                   
+                  </ul>
+                </li>
+				
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">pesticides <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Insecticides</a></li>
+                    <li><a href="#">Fungicides</a></li>
+                    <li><a href="#">Herbicides</a></li>
+                  </ul>
+                </li>
+				
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">fertilizers <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Organic</a></li>
+                    <li><a href="#">Inorganic</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="plant1" style="width:400px;position:absolute; top:90%" >
+      <div class="container">
+      <div class="carousel-caption">
+      pavan
+      kalyan reddy
+      </div>
+      </div>
+    </div>
+
+
+
+
+    {% if messages %}
+    <div class="col-12">
+      {% for message in messages %}
+        {% if message.tags == "error" %}
+        <div class="alert">
+          <span class="closebtnn" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <strong>{{message}}</strong> 
+        </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  
+
+
+
+  
+
+
+      
+
+
+
+  <div class="login-box"    style="position:absolute; top:50%;left:50%;  ">
+
+    <h2>WELCOME</h2>
+    <form action="{% url 'addfarmers' %}" method="get">
+      {% csrf_token %}
+      <div class="user-box">
+        <input type="text" name="fid" placeholder='enter aadhaar number'>
+        
+      </div>
+      <div class="user-box">
+        <input type="text" name="fname" placeholder='Farmer_Name'>
+        
+      </div>
+      <div class="user-box">
+        <input type='number' name="fland" placeholder='farm_land'>
+        
+      </div>
+      <div class="user-box">
+        <input type='text' name="phone" placeholder='enter phone number'>
+        
+      </div>
+      <button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </button>
+    </form>
+  </div>
+
+
+
+
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="{% static 'dist/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'dist/js/bootstrap.holder.js' %}"></script>
+    </body>

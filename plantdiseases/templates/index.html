@@ -1,0 +1,256 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="themes/assets/ico/favicon.ico">
+    <title>Bootstrappage.com free templates</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'assets/css/carousel.css' %}" rel="stylesheet">
+  </head>
+  <style>
+
+    .plant1 {
+      background-image:url('{% static 'assets/images/plants.png'%}');
+      background:linear-gradient(rgba(0,0,0,1));
+      background-repeat: no-repeat;
+
+  background-size: cover;
+    }
+    .plant2 {
+      background-color: "red"
+      background-repeat: no-repeat;
+
+  background-size: cover;}
+
+
+ img {
+  max-width: 100%;
+   border-radius: 16px;
+
+}
+img:hover {
+  transform: scaleX(-1);
+}
+
+    .cl{
+      text-align: left;
+    }
+   .ca{
+   position:absolute;
+   top:10px;
+   left:300px;
+   }
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+    </style>
+<!-- NAVBAR
+================================================== -->
+  <body>
+  <div id="navbar">
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+    
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href=''>Home</a></li>
+                <li><a href="/farmer">Farmers corner</a></li>
+                
+                
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">plant diseases <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Bacterial</a></li>
+                    <li><a href="#">Fungal</a></li>
+                    <li><a href="#">Viral</a></li>
+                   
+                  </ul>
+                </li>
+				
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">pesticides <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Insecticides</a></li>
+                    <li><a href="#">Fungicides</a></li>
+                    <li><a href="#">Herbicides</a></li>
+                  </ul>
+                </li>
+				
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">fertilizers <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Organic</a></li>
+                    <li><a href="#">Inorganic</a></li>
+                  </ul>
+                </li>
+                <li><a href="/farmer">Contact</a></li>
+                <li><p><a class="btn btn-default ca" href="add" role="button">Login &raquo;</a></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+
+    <!-- Carousel
+    ================================================== -->
+ 
+         
+			<div class="plant1" style="height:600px;">
+			  <div class="container">
+				<div class="carousel-caption">
+				
+				</div>
+			  </div>
+			</div>
+    
+
+  
+
+
+
+	<div class="mainTitle">
+    <div class="container">
+    <h1>plant diseases</h1>
+    <p><b></b>plant disease, an impairment of the normal state of a plant that interrupts or modifies its vital functions. All species of plants, wild and cultivated alike, are subject to disease. Although each species is susceptible to characteristic diseases, these are, in each case, relatively few in number. The occurrence and prevalence of plant diseases vary from season to season, depending on the presence of the pathogen, environmental conditions, and the crops and varieties grown. Some plant varieties are particularly subject to outbreaks of diseases while others are more resistant to them</p>
+    </div>
+    </div>
+    <div class="mainTitle">
+    <div class="container">
+      <h3>Nature and importance of plant diseases</h3>
+      <p>Plant diseases are known from times preceding the earliest writings. Fossil evidence indicates that plants were affected by disease 250 million years ago.Loss of crops from plant diseases may also result in hunger and starvation, especially in less-developed countries where access to disease-control methods is limited and annual losses of 30 to 50 percent are not uncommon for major crops. In some years, losses are much greater, producing catastrophic results for those who depend on the crop for food. Major disease outbreaks among food crops have led to famines and mass migrations throughout history.
+      </div></div>
+  
+      <div class="container">
+  <h2>Bacterial diseases</h2>
+  <p>Bacterial diseases of plants are caused by six genera of bacteria, that is, Agrobacterium, Corynebacterium, Erwinia, Pseudomonas, Streptomyces, and Xanthomonas. The effective control of bacterial diseases in orchards is mostly based on cooper compounds which can cause phytotoxic effect, also some fungicides and different antibiotic preparations. The protection against bacterial diseases requires a new approach based on natural compounds (including botanical extracts and essential oils) and resistance inducers which applied with other substances can contribute to the integrated control of bacterial diseases (Burr, 2001).
+  </p>
+  <h3 style="color:green">some of the bacterial diseases are shown below</h3>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+       {% for bac in bacs %}
+       <div class="col-lg-4">
+        <img  src="{{bac.image.url}} " alt="Generic placeholder image" height="200px">
+        <h2> {{bac.disease}} </h2>
+        <div class="cl">
+        <p><b>causative agent : </b>{{bac.causative_agent}}</p>
+           <p><span style="color:blue"> <b>hosts: </b></span>{{bac.hosts}}</p>
+           <p><b>Symptoms: </b>{{bac.symptoms}}</p>
+           <p><b>pesticides: </b>{{bac.pesticides}}</p>
+          </div>
+      </div><!-- /.col-lg-4 -->
+      {% endfor %}
+      </div><!-- /.row -->
+	
+</div>
+<div class="container marketing">
+
+  <h2>Fungal diseases</h2>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+     
+     {% for fung in fungs %}
+     <div class="col-lg-4">
+      <img  src="{{fung.image.url}} " alt="Generic placeholder image" height="200px">
+      <h2> {{fung.disease}} </h2>
+      <div class="cl">
+     
+      <p><b>causative agent : </b>{{fung.causative_agent}}</p>
+         <p><span style="color:blue"> <b>hosts: </b></span>{{fung.hosts}}</p>
+         <p><b>Symptoms: </b>{{fung.symptoms}}</p>
+         <p><b>pesticides: </b>{{fung.pesticides}}</p>
+        </div>
+    </div><!-- /.col-lg-4 -->
+    {% endfor %}
+ 
+    </div><!-- /.row -->
+</div>
+</div>
+
+	
+	
+	
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="cntr">We are launching complete online food order system for restaurent and takeaway Only at the rate <br>&pound;999 </h1>
+			</div>
+		</div>
+		</div>
+	
+	
+	
+	<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{% static 'dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'dist/js/bootstrap.holder.js' %}"></script>
+  </body>
+</html>
