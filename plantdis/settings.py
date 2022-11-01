@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+import psycopg2
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -73,16 +74,21 @@ WSGI_APPLICATION = 'plantdis.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dudhsagar',
-       'USER':'root',
-        'PASSWORD':'Geetha',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        
+
+
+
+
+   
     }
 }
+import dj_database_url
+
+DATABASES = {'default': dj_database_url.config()}
 
 
 
