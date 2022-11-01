@@ -1,1 +1,1 @@
-web: python plantdis/manage.py runserver 0.0.0.0:$PORT
+web: gunicorn plantdis.wsgi --log-file -
