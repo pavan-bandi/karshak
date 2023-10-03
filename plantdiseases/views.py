@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import bacterialdiseases,fungaldiseases,crops,farmer,pesticides
-# Create your views here.
+
 from django.contrib import messages
 
 def home(request):
